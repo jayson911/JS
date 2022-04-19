@@ -65,5 +65,5 @@ let b = prompt('enter 2 num');
     }else if (a < b){
         document.write(b);
     }else if (a = b){
-        document.write(a,'=', b);
+        document.write('однакові');
     }
