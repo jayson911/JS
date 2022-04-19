@@ -9,7 +9,7 @@ let a = prompt('enter your number');
     }
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
-let time = prompt('enter your time');
+let time = +prompt('enter your time');
     if (time <= 15){
         document.write('<div>1 частина години</div>');
     } else if(time <= 30){
@@ -20,7 +20,7 @@ let time = prompt('enter your time');
         document.write('<div>4 частина години</div>');
     }
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
-let day = prompt('enter day');
+let day = +prompt('enter day');
     if(day <= 10){
         document.write('<div>1 декада місяця</div>');
     }else if(day <= 20){
@@ -52,6 +52,8 @@ let routine = prompt('enter your day');
         case 'Sunday':
             document.write('<div>Sunday</div>');
             break;
+        default:
+            console.log('default');
     }
     // - Користувач вводить або має два числа.
     //     Потрібно знайти та вивести максимальне число з тих двох .
