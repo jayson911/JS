@@ -1,12 +1,12 @@
 // // - Є змінна х, якій ви надаєте довільне числове значення.
 // //     Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
 //
-let a = prompt('enter your number');
-    if(a === 0){
-        document.write('<div>вірно</div>');
-    }else {
-        document.write('<div>невірно</div>');
-    }
+// let a = prompt('enter your number');
+//     if(a === 0){
+//         document.write('<div>вірно</div>');
+//     }else {
+//         document.write('<div>невірно</div>');
+//     }
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
 let time = +prompt('enter your time');
@@ -58,3 +58,12 @@ let routine = prompt('enter your day');
     // - Користувач вводить або має два числа.
     //     Потрібно знайти та вивести максимальне число з тих двох .
     //     Також потрібно врахувати коли введені рівні числа.
+let a = prompt('enter 1 num');
+let b = prompt('enter 2 num');
+    if(a > b){
+        document.write(a);
+    }else if (a < b){
+        document.write(b);
+    }else if (a = b){
+        document.write(a,'=', b);
+    }
