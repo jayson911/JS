@@ -50,7 +50,7 @@
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 function someTxtUlLi(text){
     for (let i = 0; i < 3; i++) {
-        document.write(`<li>${text}</li>`)
+        document.write(`<li>${text}</li>`);
 
     }
 }
