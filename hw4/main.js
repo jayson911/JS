@@ -48,15 +48,15 @@
 // sayHello("man ");
 // sayHello("okten");
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-function someTxtUlLi(text){
-    for (let i = 0; i < 3; i++) {
-        document.write(`<li>${text}</li>`);
-
-    }
-}
-document.write(`<ul>Some Ul`);
-someTxtUlLi('Hello my friend');
-document.write(`</ul>`);
+// function someTxtUlLi(text){
+//     for (let i = 0; i < 3; i++) {
+//         document.write(`<li>${text}</li>`);
+//
+//     }
+// }
+// document.write(`<ul>Some Ul`);
+// someTxtUlLi('Hello my friend');
+// document.write(`</ul>`);
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
