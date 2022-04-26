@@ -1,3 +1,8 @@
+// function sum(x){
+//     let s = 0;
+//     for (let i = 0; i < x.length; i++) {
+//         s += x[i];
+//     } return s;
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 // function rectangle (a, b){
 //     let result = a * b;
@@ -51,12 +56,12 @@
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 // function someTxtUlLi(text){
 //     for (let i = 0; i < 3; i++) {
-//         document.write(`<ul>Some Ul`);
 //         document.write(`<li>${text}</li>`);
-//         document.write(`</ul>`);
 //     }
 // }
+//         document.write(`<ul>Some Ul`);
 // someTxtUlLi('Hello my friend');
+//         document.write(`</ul>`);
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 // function someArr(){
 //     for (let i = 0; i < arguments.length; i++) {
@@ -82,21 +87,17 @@
 // }
 // iterator(users);
 // - створити функцію яка повертає найменьше число з масиву
-// function minNum(a, b){
-//     if (a < b){
-//         return a;
-//     }else return b;
-// }
-// let num = minNum(
-//     prompt('num1'),
-//     prompt('num2')
-// );
-// console.log(num);
+function minArr(myArr){
+    let al = myArr.length;
+    minimum = myArr[al - 1];
+    while (al--){
+        if(myArr[al] < minimum){
+            minimum = myArr[al]
+        }
+    }return minimum;
+};
+let myArr = [1,5,66,55];
+console.log(minArr(myArr));
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-function sum(x){
-    let s = 0;
-    for (let i = 0; i < x.length; i++) {
-        s += x[i];
-    } return s;
-}
-console.log(sum([1, 5, 55]));
+// }
+// console.log(sum([1, 5, 55]));
