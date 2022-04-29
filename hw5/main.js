@@ -83,14 +83,6 @@
 // sayHello('octen');
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-// function someTxtUlLi(text){
-//     for (let i = 0; i < 3; i++) {
-//         document.write(`<li>${text}</li>`);
-//     }
-// }
-//         document.write(`<ul>Some Ul`);
-// someTxtUlLi('Hello my friend');
-//         document.write(`</ul>`);
 // let someTxtUlLi = (text) =>{
 //     for (let i = 0; i < 3; i++) {
 //         document.write(`<li>${text}</li>`);
@@ -101,8 +93,63 @@
 // someTxtUlLi('hello');
 // document.write(`</ul>`);
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+// let someArr = (mass) =>{
+//     for (let i = 0; i < mass.length; i++) {
+//         const mass1 = mass[i];
+//     }return mass;
+// }
+// console.log(someArr([123, 'hello', true]));
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+// let iterator = (users) => {
+//     for (const user of users) {
+//         document.write(`<div>${user.id}, ${user.name}, ${user.age}</div>`)
+//     }
+// }
+// document.write(iterator([{id: 1, name: 'Vasya', age: 25}, {id: 2, name: 'Lena', age: 22}]));
+
 // - створити функцію яка повертає найменьше число з масиву
+// let arr = [1, 5, -5, 25];
+// function minNum(array){
+//     let min = array[0];
+//     for (const item of array) {
+//         if (item < min){
+//             min = item;
+//         }
+//     }return min;
+// }
+// console.log(minNum(arr));
+// let minNum = (arr) =>{
+//     let min = arr[0];
+//     for (const minElement of arr) {
+//         if (minElement < min){
+//             min = minElement;
+//         }
+//     }return min;
+// }
+// console.log(minNum([10,5,6]));
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-//
+// let arr = [1, 2, 3];
+// function foo(array){
+//     let sum = 0;
+//     for (const arrayElement of array) {
+//         sum += arrayElement;
+//     }return sum;
+// }
+// let number = foo(arr);
+// console.log(number);
+// let foo = (arr) =>{
+//     let sum = 0;
+//     for (const fooElement of arr) {
+//         sum += fooElement;
+//     }return sum;
+// }
+// console.log(foo([1, 2, 10]));
 // -створити функцію, яка приймає масив з 2х об'єктів, та міняє їх місцями.
+// let reverse = (arr) =>{
+//     let nums = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         nums[i] = arr[(arr.length - 1) - i];
+//
+//     }return nums
+// }
+// console.log(reverse(['hello', 'octen']));
