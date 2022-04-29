@@ -87,17 +87,23 @@
 // }
 // iterator(users);
 // - створити функцію яка повертає найменьше число з масиву
-function minArr(myArr){
-    let al = myArr.length;
-    minimum = myArr[al - 1];
-    while (al--){
-        if(myArr[al] < minimum){
-            minimum = myArr[al]
+let arr = [1, 5, -5, 25];
+function minNum(array){
+    let min = array[0];
+    for (const item of array) {
+        if (item < min){
+            min = item;
         }
-    }return minimum;
-};
-let myArr = [1,5,66,55];
-console.log(minArr(myArr));
+    }return min;
+}
+console.log(minNum(arr));
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+// let arr = [1, 2, 3];
+// function foo(array){
+//     let sum = 0;
+//     for (const arrayElement of array) {
+//         sum += arrayElement;
+//     }return sum;
 // }
-// console.log(sum([1, 5, 55]));
+// let number = foo(arr);
+// console.log(number);
