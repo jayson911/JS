@@ -1,4 +1,3 @@
-
 // Все стірлочними!!!!!!!!!
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 // let average = (array) => {
@@ -58,7 +57,6 @@
 // }
 // console.log(cylinderA(2,10))
 // - створити функцію яка приймає масив та виводить кожен його елемент
-
 // let iterator = (users) =>{
 //     let usersNames = [
 //         {name: 'vasya', age: 31, status: false},
@@ -106,7 +104,6 @@
 //     }
 // }
 // document.write(iterator([{id: 1, name: 'Vasya', age: 25}, {id: 2, name: 'Lena', age: 22}]));
-
 // - створити функцію яка повертає найменьше число з масиву
 // let arr = [1, 5, -5, 25];
 // function minNum(array){
@@ -154,3 +151,91 @@
 // }
 // console.log(reverse(['hello', 'octen']));
 //
+//-------------------------Додаткові Завдання-----------------------------------------------------------------------
+// Всі функції повинні бути описані стрілочним типом!!!!
+// - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+// let minNum = (arr)=> {
+//     let i = arr[0];
+//     for (const arrElement of arr) {
+//         if (i > arrElement){
+//             i = arrElement;
+//         }
+//     }return i;
+// }
+// console.log(minNum([25, 5, 10]));
+// - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+// let maxNum = (arr)=> {
+//     let i = arr[0];
+//     for (const arrElement of arr) {
+//         if (i < arrElement){
+//             i = arrElement;
+//         }
+//     }return i;
+// }
+// console.log(maxNum([25, 5, 10]));
+// - створити функцію яка повертає найбільше число з масиву
+// let maxNum = (arr)=>{
+//     let i = arr[0];
+//     for (const arrElement of arr) {
+//         if(i < arrElement){
+//             i = arrElement;
+//         }
+//     }return i;
+// }
+// console.log(maxNum([33, 56, 76]));
+// - створити функцію яка повертає найменьше число з масиву
+// let minNum = (arr)=>{
+//     let i = arr[0];
+//     for (const arrElement of arr) {
+//         if(i > arrElement){
+//             i = arrElement;
+//         }
+//     }return i;
+// }
+// console.log(minNum([25, 66, 2]));
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+// let arr = [1, 2, 3];
+// function foo(array){
+//     let sum = 0;
+//     for (const arrayElement of array) {
+//         sum += arrayElement;
+//     }return sum;
+// }
+// let number = foo(arr);
+// console.log(number);
+// let foo = (arr) =>{
+//     let sum = 0;
+//     for (const fooElement of arr) {
+//         sum += fooElement;
+//     }return sum;
+// }
+// console.log(foo([1, 2, 10]));
+//
+//
+//
+//
+// - Дано натуральное число n. Выведите все числа от 1 до n.
+// - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
+//
+//
+// -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+//   EXAMPLE:
+//   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+let foo = (num1, num2, num3, num4)=>{
+    if (num1 > num2 && num1 > num3 && num1 > num4){
+    }return num1;
+}
+console.log(foo(9,8,0,4));
+//
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// Двожина масиву від 2 до 100
+// EXAMPLE:
+// [1,0,6,0,3] => [1,6,3,0,0]
+// [0,1,2,3,4] => [1,2,3,4,0]
+// [0,0,1,0]   => [1,0,0,0]
+
+
+
+

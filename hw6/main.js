@@ -88,3 +88,56 @@
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
+let cards = [
+    {cardSuit: null, value: 'joker', color: 'black'},
+    {cardSuit: null, value: 'joker', color: 'red'},
+    {cardSuit: 'spade', value: 'ace', color: 'black'},
+    {cardSuit: 'clubs', value: 'ace', color: 'black'},
+    {cardSuit: 'diamond', value: 'ace', color: 'red'},
+    {cardSuit: 'heart', value: 'ace', color: 'red'},
+    {cardSuit: 'spade', value: 'king', color: 'black'},
+    {cardSuit: 'clubs', value: 'king', color: 'black'},
+    {cardSuit: 'diamond', value: 'king', color: 'red'},
+    {cardSuit: 'heart', value: 'king', color: 'red'},
+    {cardSuit: 'spade', value: 'queen', color: 'black'},
+    {cardSuit: 'clubs', value: 'queen', color: 'black'},
+    {cardSuit: 'diamond', value: 'queen', color: 'red'},
+    {cardSuit: 'heart', value: 'queen', color: 'red'},
+    {cardSuit: 'spade', value: 'jack', color: 'black'},
+    {cardSuit: 'clubs', value: 'jack', color: 'black'},
+    {cardSuit: 'diamond', value: 'jack', color: 'red'},
+    {cardSuit: 'heart', value: 'jack', color: 'red'},
+    {cardSuit: 'spade', value: 10, color: 'black'},
+    {cardSuit: 'clubs', value: 10, color: 'black'},
+    {cardSuit: 'diamond', value: 10, color: 'red'},
+    {cardSuit: 'heart', value: 10, color: 'red'},
+    {cardSuit: 'spade', value: 9, color: 'black'},
+    {cardSuit: 'clubs', value: 9, color: 'black'},
+    {cardSuit: 'diamond', value: 9, color: 'red'},
+    {cardSuit: 'heart', value: 9, color: 'red'},
+    {cardSuit: 'spade', value: 8, color: 'black'},
+    {cardSuit: 'clubs', value: 8, color: 'black'},
+    {cardSuit: 'diamond', value: 8, color: 'red'},
+    {cardSuit: 'heart', value: 8, color: 'red'},
+    {cardSuit: 'spade', value: 7, color: 'black'},
+    {cardSuit: 'clubs', value: 7, color: 'black'},
+    {cardSuit: 'diamond', value: 7, color: 'red'},
+    {cardSuit: 'heart', value: 7, color: 'red'},
+    {cardSuit: 'spade', value: 6, color: 'black'},
+    {cardSuit: 'clubs', value: 6, color: 'black'},
+    {cardSuit: 'diamond', value: 6, color: 'red'},
+    {cardSuit: 'heart', value: 6, color: 'red'}
+];
+// let filter = cards.find(value => value.value === 'ace' && value.cardSuit === 'spade');
+// console.log(filter);
+// let filter = cards.filter(value => value.value === 6);
+// console.log(filter);
+// let filter = cards.filter(value => value.color === 'red');
+// console.log(filter);
+// let filter = cards.filter(value => value.cardSuit === 'diamond');
+// console.log(filter);
+let numsTostring = (str) =>{
+    let cardsValue = cards.;
+    return cardsValue.join(',');
+}
+console.log(numsTostring(cards));
