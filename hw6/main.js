@@ -25,8 +25,7 @@
 // console.log(str2.toLowerCase());
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 // let str = ' dirty string   '
-// let replaceAll = str.replaceAll('   ', '');
-//     str.replace(' ', '');
+// let replaceAll = str.trim(' ');
 // console.log(replaceAll);
 //
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
@@ -48,12 +47,18 @@
 //     let nums = [11,21,3];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
-//
+// //
 // let nums = [11,21,3];
-// let sortNums = (direction) =>{
-//     return direction.sort((n1, n2) => n2 - n1);
+// let sortNums = (arr, direction) =>{
+//         if( direction === 'ascending'){
+//             arr.sort((a, b) => a - b);
+//         }else if(direction === 'descending'){
+//             arr.sort((a, b)=> b - a);
+//         }
+//         return arr;
 // }
-// console.log(sortNums(nums));
+// console.log(sortNums(nums, 'ascending'));
+// console.log(sortNums(nums, 'descending'));
 
 // let sortNums = (direction) =>{
 //     return direction.sort((n1, n2) => n1 - n2);
@@ -107,26 +112,26 @@ let cards = [
     {cardSuit: 'clubs', value: 'jack', color: 'black'},
     {cardSuit: 'diamond', value: 'jack', color: 'red'},
     {cardSuit: 'heart', value: 'jack', color: 'red'},
-    {cardSuit: 'spade', value: 10, color: 'black'},
-    {cardSuit: 'clubs', value: 10, color: 'black'},
-    {cardSuit: 'diamond', value: 10, color: 'red'},
-    {cardSuit: 'heart', value: 10, color: 'red'},
-    {cardSuit: 'spade', value: 9, color: 'black'},
-    {cardSuit: 'clubs', value: 9, color: 'black'},
-    {cardSuit: 'diamond', value: 9, color: 'red'},
-    {cardSuit: 'heart', value: 9, color: 'red'},
-    {cardSuit: 'spade', value: 8, color: 'black'},
-    {cardSuit: 'clubs', value: 8, color: 'black'},
-    {cardSuit: 'diamond', value: 8, color: 'red'},
-    {cardSuit: 'heart', value: 8, color: 'red'},
-    {cardSuit: 'spade', value: 7, color: 'black'},
-    {cardSuit: 'clubs', value: 7, color: 'black'},
-    {cardSuit: 'diamond', value: 7, color: 'red'},
-    {cardSuit: 'heart', value: 7, color: 'red'},
-    {cardSuit: 'spade', value: 6, color: 'black'},
-    {cardSuit: 'clubs', value: 6, color: 'black'},
-    {cardSuit: 'diamond', value: 6, color: 'red'},
-    {cardSuit: 'heart', value: 6, color: 'red'}
+    {cardSuit: 'spade', value: '10', color: 'black'},
+    {cardSuit: 'clubs', value: '10', color: 'black'},
+    {cardSuit: 'diamond', value: '10', color: 'red'},
+    {cardSuit: 'heart', value: '10', color: 'red'},
+    {cardSuit: 'spade', value: '9', color: 'black'},
+    {cardSuit: 'clubs', value: '9', color: 'black'},
+    {cardSuit: 'diamond', value: '9', color: 'red'},
+    {cardSuit: 'heart', value: '9', color: 'red'},
+    {cardSuit: 'spade', value: '8', color: 'black'},
+    {cardSuit: 'clubs', value: '8', color: 'black'},
+    {cardSuit: 'diamond', value: '8', color: 'red'},
+    {cardSuit: 'heart', value: '8', color: 'red'},
+    {cardSuit: 'spade', value: '7', color: 'black'},
+    {cardSuit: 'clubs', value: '7', color: 'black'},
+    {cardSuit: 'diamond', value: '7', color: 'red'},
+    {cardSuit: 'heart', value: '7', color: 'red'},
+    {cardSuit: 'spade', value: '6', color: 'black'},
+    {cardSuit: 'clubs', value: '6', color: 'black'},
+    {cardSuit: 'diamond', value: '6', color: 'red'},
+    {cardSuit: 'heart', value: '6', color: 'red'}
 ];
 // let filter = cards.find(value => value.value === 'ace' && value.cardSuit === 'spade');
 // console.log(filter);
@@ -136,8 +141,5 @@ let cards = [
 // console.log(filter);
 // let filter = cards.filter(value => value.cardSuit === 'diamond');
 // console.log(filter);
-let numsTostring = (str) =>{
-    let cardsValue = cards.;
-    return cardsValue.join(',');
-}
-console.log(numsTostring(cards));
+let filter = cards.filter(value => value.cardSuit === 'clubs' && value.value >= '9' || value.value === '10' && value.cardSuit === 'clubs' || value.value === 'joker');
+console.log(filter);
