@@ -77,15 +77,26 @@ for (const newClassAnchorElement of newClassAnchor) {
 }
 // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
 let link = document.getElementsByTagName('a');
-for (const linkElement of link) {
-    if (linkElement === 'link3'){
+for (const linkElement in link) {
+    if (linkElement === `link3`){
         linkElement.style.fontSize = '40px';
     }
 }
-console.log(link)
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
 let newClassA = document.getElementsByTagName('a');
+for (const newClassAElement of newClassA) {
+    if(newClassAnchor === `link1`){
+        newClassAElement.classList.add('element_link1');
+    }else if(newClassAElement === `link2`){
+        newClassAElement.classList.add('element_link2');
+    }else if (newClassAElement === `link3`){
+        newClassAElement.classList.add('element_link3');
+    }
+
+}
+
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+
 // j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
 // k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
 // l) отримати елементи p та змінити їм padding на 20px
