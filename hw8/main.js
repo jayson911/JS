@@ -77,27 +77,48 @@ for (const newClassAnchorElement of newClassAnchor) {
 }
 // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
 let link = document.getElementsByTagName('a');
-for (const linkElement in link) {
-    if (linkElement === `link3`){
+for (const linkElement of link) {
+    if (linkElement.innerText === 'link3'){
         linkElement.style.fontSize = '40px';
     }
 }
+console.log(link);
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
 let newClassA = document.getElementsByTagName('a');
 for (const newClassAElement of newClassA) {
-    if(newClassAnchor === `link1`){
-        newClassAElement.classList.add('element_link1');
-    }else if(newClassAElement === `link2`){
-        newClassAElement.classList.add('element_link2');
-    }else if (newClassAElement === `link3`){
-        newClassAElement.classList.add('element_link3');
-    }
-
+    newClassAElement.classList.add(`element_${newClassAElement.innerText}`)
 }
-
+console.log(newClassA);
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-
+// let newElemPromt = document.getElementsByClassName('sub-header');
+// for (const newElemPromtElement of newElemPromt) {
+//     let prom = prompt('what color do u want?');
+//     if (prom === 'red'){
+//         newElemPromtElement.style.backgroundColor = 'red';
+//     }
+// }
 // j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
-// k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+// let newBgProm = document.getElementsByClassName('sub-header');
+// for (const newBgPromElement of newBgProm) {
+//     let prom = prompt('what color do u want?');
+//     if(prom === 'red' && newBgPromElement.innerText === 'content 2 segment'){
+//         newBgPromElement.style.backgroundColor = 'red';
+//     }
+// }
+// k) отримує елемент з класом content_1 та заміняє  в ньому текст на довільний. Текст отримати з prompt()
+let newTxtProm = document.getElementsByClassName('content_1')
+for (const newTxtPromElement of newTxtProm) {
+    let prom = prompt('wright your message');
+    newTxtPromElement.innerText = `${prom}`;
+}
+console.log(newTxtProm);
 // l) отримати елементи p та змінити їм padding на 20px
+let newPaddingP = document.getElementsByTagName('p');
+for (const newPaddingPElement of newPaddingP) {
+    newPaddingPElement.style.padding = '20px';
+}
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
+let newNameGroup = document.getElementsByClassName('text2');
+for (const newNameGroupElement of newNameGroup) {
+    newNameGroupElement.innerText = 'mar-2022';
+}
