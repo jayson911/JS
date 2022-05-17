@@ -18,15 +18,15 @@
 // Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
 // Завдання робити через цикли.
 
-let mass = ['Main','Products','About us','Contacts'];
-for (const mass1 of mass) {
-    const takeUl = document.getElementsByClassName('menu');
-    takeUl.innerHTML = `<li/> ${mass}`;
-    document.appendChild(takeUl);
+let arr = ['Main','Products','About us','Contacts'];
+for (const key of arr) {
+    const li = document.createElement('li');
+    for (const liKey in li) {
+    const menu = document.getElementsByClassName('menu');
+        li.innerHTML = `${key}`;
+    }
+    document.body.appendChild(li) ;
 }
-
-
-
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
