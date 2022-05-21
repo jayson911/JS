@@ -20,12 +20,10 @@
 
 let arr = ['Main','Products','About us','Contacts'];
 for (const key of arr) {
-    const li = document.createElement('li');
-    for (const liKey in li) {
     const menu = document.getElementsByClassName('menu');
-        li.innerHTML = `${key}`;
-    }
-    document.body.appendChild(li) ;
+    const li = document.createElement('li');
+    li.innerText = key;
+    menu.body.appendChild(li) ;
 }
 // - Є масив
 // let coursesAndDurationArray = [
