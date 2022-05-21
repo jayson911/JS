@@ -23,7 +23,7 @@ for (const key of arr) {
     const menu = document.getElementsByClassName('menu');
     const li = document.createElement('li');
     li.innerText = key;
-    menu.body.appendChild(li) ;
+    menu.body.appendChild(li);
 }
 // - Є масив
 // let coursesAndDurationArray = [
