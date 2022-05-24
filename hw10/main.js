@@ -17,19 +17,27 @@ target.onclick = function (ev){
 //     Кнопка повинна лежати за межами форм (Щоб уникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
 
-let f1 = document.forms.f1;
-f1.onsubmit = function (e){
-    e.preventDefault();
-    let userNameInput = f1.userName;
-    let userEmailInput = f1.email;
-    let userName = userNameInput.value;
-    let userEmail = userEmailInput.value;
-    let user = {
-        username: userName,
-        email: userEmail
-    }
-    console.log(user);
-}
+// let f1 = document.forms.f1;
+// f1.onsubmit = function (e){
+//     e.preventDefault();
+//     let userNameInput = f1.userName;
+//     let userEmailInput = f1.email;
+//     let userName = userNameInput.value;
+//     let userEmail = userEmailInput.value;
+//     let user = {
+//         username: userName,
+//         email: userEmail
+//     }
+//     console.log(user);
+// }
+let button = document.getElementById('goGo');
+    button.addEventListener('click', function (){
+        console.log(f1.userName.value);
+        console.log(f1.email.value);
+        console.log(f2.nickName.value);
+        console.log(f2.age.value);
+    })
+
 //
 //
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
