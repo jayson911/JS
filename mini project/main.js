@@ -37,9 +37,21 @@ fetch('https://jsonplaceholder.typicode.com/users')
             }
             let divUsers = document.createElement('div');
             divUsers.classList.add('users');
-            divUsers.innerHTML = `id: ${divElement.id} name: ${divElement.name}`
-            div.appendChild(divUsers);
-            div.appendChild(btn);
+            divUsers.innerHTML = `id: ${divElement.id} name: ${divElement.name}`;
+
+            const keyUser = 'key';
+
+            const saveInUser = (name) =>{
+                let userArray = JSON.parse(localStorage.getItem(keyUser)) || [];
+                userArray.push({name});
+                localStorage.setItem(keyUser, JSON.stringify(userArray))
+            }
+            btn.onclick = () =>{
+                saveInUser(divElement);
+            }
+
+            div.append(btn, divUsers);
+            divUsers.appendChild(btn);
             document.body.appendChild(div);
 
         }
