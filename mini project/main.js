@@ -31,7 +31,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         for (const divElement of users) {
             let btn = document.createElement('button');
             btn.classList.add('click');
-            btn.innerText = "click";
+            btn.innerText = "show User";
             btn.onclick = function (){
                 window.location.href='user-details.html';
             }
