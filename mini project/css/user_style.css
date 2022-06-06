@@ -1,0 +1,53 @@
+.dataUser {
+    border: 3px solid forestgreen;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.user_id {
+    display: flex;
+    grid-gap: 20px;
+    border-bottom: 1px solid #102b3e ;
+
+}
+
+.user_id>h4 {
+    border-radius: 50%;
+    background: black;
+    width: 25px;
+    height: 25px;
+    color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.user_id>h2 {
+    width: 300px;
+}
+
+.btn {
+    width: 150px;
+    height: 35px;
+    position: relative;
+    top: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
+}
+
+.btn:hover {
+    font-weight: 600;
+    background: #55c3b6;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 1px inset, rgba(0, 0, 0, 0.9) 0 0 0 1px;
+
+}
